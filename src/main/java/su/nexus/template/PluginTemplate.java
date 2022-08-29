@@ -19,7 +19,7 @@ import org.mineacademy.fo.plugin.SimplePlugin;
  */
 public final class PluginTemplate extends SimplePlugin {
 
-	@Getter @Setter
+	@Getter
 	public static PluginTemplate Instance;
 
 	/**
