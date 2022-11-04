@@ -7,10 +7,10 @@
 	<groupId>su.nexus</groupId>
 	
 	<!-- Change to your plugin name, must be lower cased and match your end package name. No spaces. -->
-	<artifactId>Kvadrat</artifactId>
+	<artifactId>PluginTemplate</artifactId>
 	
 	<!-- Change to your plugin's name. Can contain capital letters, but do NOT use spaces. -->
-	<name>Kvadrat</name>
+	<name>PluginTemplate</name>
 	
 	<!-- Change to the appropriate plugin's version, starting at 1.0.0. -->
 	<version>1.0.0</version>
@@ -24,7 +24,7 @@
 		<author>AnleaR</author>
 		
 		<!-- Change to the full path where your main plugin class is located. -->
-		<main.class>su.nexus.kvadrat.KvadratPlugin</main.class>
+		<main.class>su.nexus.template.PluginTemplate</main.class>
 		
 		<!-- Change the Java version this plugin is built on.
 
@@ -34,7 +34,7 @@
 			 but if you use "11" or "17" then it will NOT load on servers
 			 with previous Java versions. We recommend you stick with 1.8.
 			 -->
-		<java.version>1.8</java.version>
+		<java.version>17</java.version>
 		
 		<!-- Change to the latest version from https://github.com/kangarko/Foundation/releases
 			 or change to "LATEST" if you downloaded Foundation to your disk and compiled it. -->
@@ -60,8 +60,8 @@
 		</repository>
 
 		<repository>
-			<id>dmulloy2-repo</id>
-			<url>https://repo.dmulloy2.net/repository/public/</url>
+			<id>purpur</id>
+			<url>https://repo.purpurmc.org/snapshots</url>
 		</repository>
 	</repositories>
 	
@@ -101,48 +101,16 @@
 		</dependency>
 
 		<dependency>
-			<groupId>org.spigotmc</groupId>
-			<artifactId>spigot-api</artifactId>
-			<version>1.12.2-R0.1-SNAPSHOT</version>
+			<groupId>${nexuslib.path}</groupId>
+			<artifactId>NexusLib</artifactId>
+			<version>${nexuslib.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.purpurmc.purpur</groupId>
+			<artifactId>purpur-api</artifactId>
+			<version>1.19-R0.1-SNAPSHOT</version>
 			<scope>provided</scope>
-		</dependency>
-
-		<dependency>
-			<groupId>org.hjson</groupId>
-			<artifactId>hjson</artifactId>
-			<version>3.0.0</version>
-			<scope>compile</scope>
-		</dependency>
-
-		<dependency>
-			<groupId>com.comphenix.protocol</groupId>
-			<artifactId>ProtocolLib</artifactId>
-			<version>4.7.0</version>
-			<scope>provided</scope>
-		</dependency>
-
-		<dependency>
-			<groupId>ru.den_abr</groupId>
-			<artifactId>commonlib</artifactId>
-			<version>1.0.0</version>
-			<scope>system</scope>
-			<systemPath>C:/Users/anpc0/Programming/IdeaProjects/Kvadrat/.libs/CommonLib.jar</systemPath>
-		</dependency>
-
-		<dependency>
-			<groupId>ru.vanya</groupId>
-			<artifactId>vrubles</artifactId>
-			<version>1.0.0</version>
-			<scope>system</scope>
-			<systemPath>C:/Users/anpc0/Programming/IdeaProjects/Kvadrat/.libs/VRubles.jar</systemPath>
-		</dependency>
-
-		<dependency>
-			<groupId>ru.abstractcoder.nexuscraft</groupId>
-			<artifactId>antirelog</artifactId>
-			<version>1.3.1</version>
-			<scope>system</scope>
-			<systemPath>C:/Users/anpc0/Programming/IdeaProjects/Kvadrat/.libs/NexusAntiRelog.jar</systemPath>
 		</dependency>
 
 	</dependencies>

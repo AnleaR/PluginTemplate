@@ -9,11 +9,14 @@ name: ${project.name}
 version: ${project.version}
 main: ${main.class}
 author: ${author}
-load: POSTWORLD
+load: STARTUP
 depend:
-  - CommonLib
+  - ProtocolLib
+  - PacketWrapper
+  - NexusLib
 loadbefore:
-  - CommonLib
+  - Vault
+  - NexusLib
 
   # DO NOT EDIT. This api-version is used for maximum backward compatibility.
 api-version: 1.13
