@@ -5,10 +5,10 @@
 #
 # See https://www.spigotmc.org/wiki/plugin-yml/ for more information.
 # 
-name: ${project.name} 
-version: ${project.version}
-main: ${main.class}
-author: ${author}
+name: Kvadrat 
+version: 1.0.0
+main: su.nexus.kvadrat.KvadratPlugin
+author: AnleaR
 load: POSTWORLD
 depend:
   - CommonLib

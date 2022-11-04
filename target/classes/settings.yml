@@ -1,12 +1,12 @@
 # !-----------------------------------------------------------------------------------------------!
-#                       Welcome to the main configuration of ${project.name}
+#                       Welcome to the main configuration of Kvadrat
 # !-----------------------------------------------------------------------------------------------!
 #
 #    This is the main plugin's settings class. You can use SimpleSettings to load values from it,
 #    and update it automatically.
 #
 #    For support and documentation, please visit:
-#    - https://github.com/${author}/${project.name}/wiki
+#    - https://github.com/AnleaR/Kvadrat/wiki
 #
 # !-----------------------------------------------------------------------------------------------!
 #
@@ -18,15 +18,15 @@
 #    2) TO HIDE any message, set it to 'none'.
 #
 #    3) For UNICODE CHARACTERS (smileys, symbols, ..), save the file in UTF-8 encoding. See
-#       - https://github.com/${author}/${project.name}/wiki/Use-Right-Encoding
+#       - https://github.com/AnleaR/Kvadrat/wiki/Use-Right-Encoding
 #
 #    4) JSON is supported.
-#       - For usage, see https://github.com/${author}/${project.name}/wiki/JSON
+#       - For usage, see https://github.com/AnleaR/Kvadrat/wiki/JSON
 #
 #    5) WHITELISTS can be turned into blacklists, by putting "@blacklist" on the first line.
 #       - Doing such, filters will only apply for messages in those lists.
 #
-#    PS: Everything above applies for all files in ${project.name}/ folder.
+#    PS: Everything above applies for all files in Kvadrat/ folder.
 #
 # !-----------------------------------------------------------------------------------------------!
 
@@ -62,7 +62,7 @@ Locale: en
 # The prefix used in front of most chat or console messages. You can manually use it with
 # {plugin_prefix} variable anywhere.
 # -------------------------------------------------------------------------------------------------
-Prefix: "&8[&c${project.name}&8]&7 "
+Prefix: "&8[&cKvadrat&8]&7 "
 
 # -------------------------------------------------------------------------------------------------
 # Time of some plugin's operations is measured. You can also use the LagCatcher class to invoke
